@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px 50px;
+    grid-template-areas: "one one one one one two two two two two" "three three three three three four four four four four";
+    /* row-gap:calc(100% - 100px);
+    column-gap: 20px; */
+    gap: 20px;
+    align-content: space-between;
+  }
+  .one{
+    grid-area: one;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+  }
+  .two{
+    grid-area: two;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+  }
+  .three{
+    grid-area: three;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+
+  }
+  .four{
+    grid-area: four;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+
+ 
+  }
